@@ -1,0 +1,58 @@
+body {
+    background-image: url('Batman.jpg'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: gold; /* Gold color for header text */
+}
+
+h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: gold; /* Gold for the name */
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: gold; /* Gold color for navbar links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white; /* Change color on hover */
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for sections */
+    border: 1px solid gold; /* Gold border for sections */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Space between sections */
+    display: none; /* Initially hide sections */
+}
+
+h2 {
+    color: gold; /* Gold color for section titles */
+    font-size: 2em; /* Increase heading size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
+
+p, ul {
+    color: white; /* Make text white for visibility */
+    font-size: 1.2em; /* Increase font size for better readability */
+}
+
+footer {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: gold; /* Gold for footer text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

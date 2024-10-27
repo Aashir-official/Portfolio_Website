@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Aashir Mansoor's Portfolio</title>
+</head>
+<body>
+    <header class="text-center">
+        <h1>Aashir Mansoor</h1>
+        <p>Email: malikaashir.official@gmail.com</p>
+        <p>Age: 20</p>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="portfolio" class="container mt-5">
+        <h2>Welcome to Aashir Mansoor's Portfolio Website</h2>
+        <p>This is where you can find all my projects, skills, and experiences.</p>
+    </section>
+
+    <section id="skills" class="container mt-5" style="display: none;">
+        <h2>Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>Web Development</li>
+            <li>Social Media Management</li>
+            <li>Social media service provider</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="container mt-5" style="display: none;">
+        <h2>Experience</h2>
+        <p>Social Media Activist at Geesis IT Lab (1 year)</p>
+        <p>Social Media Service Provider (1.5 years)</p>
+        <p>PF, OOP and DSA in c++ For 2 years</p>
+        <p>Database for 4 months</p>
+    </section>
+
+    <section id="projects" class="container mt-5" style="display: none;">
+        <h2>Projects</h2>
+        <p>Check out my work on <a href="#">GitHub</a>!</p>
+    </section>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Aashir Mansoor</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling effect
+        $(document).ready(function(){
+            $('a.nav-link').on('click', function(event) {
+                if (this.hash !== '') {
+                    event.preventDefault();
+                    const hash = this.hash;
+
+                    // Hide all sections first
+                    $('section').hide();
+
+                    // Show the section that is clicked
+                    $(hash).show();
+
+                    // Smooth scroll to the section
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+            });
+
+            // Show the default section (portfolio) on page load
+            $('#portfolio').show();
+        });
+    </script>
+</body>
+</html>
